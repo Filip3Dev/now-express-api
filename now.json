@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "headers": { "Access-Control-Allow-Origin": "*" },
+      "src": "/list-users",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+
+      "src": "/create-user",
+      "dest": "/index.js",
+      "methods": ["POST", "OPTIONS"],
+      "headers": { "Access-Control-Allow-Origin": "*" }
+    },
+    {
+
+      "src": "/upload-image-user",
+      "dest": "/index.js",
+      "methods": ["POST", "OPTIONS"],
+      "headers": { "Access-Control-Allow-Origin": "*" }
+    },
+    {
+
+      "src": "/login",
+      "dest": "/index.js",
+      "methods": ["POST", "OPTIONS"],
+      "headers": { "Access-Control-Allow-Origin": "*" }
+    },
+    {
+
+      "src": "/create-group",
+      "dest": "/index.js",
+      "methods": ["POST", "OPTIONS"],
+      "headers": { "Access-Control-Allow-Origin": "*" }
+    },
+    {
+
+      "src": "/list-groups",
+      "dest": "/index.js",
+      "methods": ["GET", "OPTIONS"],
+      "headers": { "Access-Control-Allow-Origin": "*" }
+    },
+    {
+
+      "src": "/send-message",
+      "dest": "/index.js",
+      "methods": ["POST", "OPTIONS"],
+      "headers": { "Access-Control-Allow-Origin": "*" }
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "@my-mongodb-uri"
+  }
+}

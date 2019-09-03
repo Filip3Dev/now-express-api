@@ -1,0 +1,9 @@
+global.SALT_KEY = 'xxxxx'
+global.pusher_app_id = 'xxxxx';
+global.pusher_app_key = 'xxxxx';
+global.pusher_app_secret = 'xxxxx';
+global.pusher_app_cluster = 'xxxxx';
+
+module.exports = {
+    containerConnection: 'xxxxx'
+}
