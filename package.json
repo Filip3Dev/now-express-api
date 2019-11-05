@@ -18,7 +18,7 @@
     "guid": "0.0.12",
     "jsonwebtoken": "^7.4.0",
     "md5": "^2.2.1",
-    "mongoose": "^5.0.0-rc0",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.1",
     "pusher": "^2.2.2"
   }
